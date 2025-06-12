@@ -11,36 +11,37 @@
    <!-- Header/Navbar -->
     <header id="header">
         <nav class="container">
-            <a href="index.html" class="logo">Menadah Untuk Alam</a>
+            <a href="#kegiatan" class="logo">Menadah Untuk Alam</a>
             <div class="menu-toggle" id="menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="index.html">Beranda</a></li>
                  <li><a href="#kegiatan">Kegiatan</a></li>
+                <li><a href="#doksli">Dokumentasi</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">Tentang <i class="fas fa-chevron-down"></i></a>
+                    <a href="a" class="dropdown-toggle">Tentang</a>
                     <ul class="dropdown-content">
                         <li><a href="#about">Tentang Kami</a></li>
                         <li><a href="#vision">Visi & Misi</a></li>
                         <li><a href="kegiatan.html">Kegiatan</a></li>
-                        <li><a href="#history">Fun Fact</a></li>
+                        <li><a href="fun-fact.html">Fun Fact</a></li>
                     </ul>
                 </li>
                 <li><a href="#partnership">Partnership</a></li>
-                <li><a href="#">Donasi</a></li>
+                <li><a href="a">Donasi</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Kegiatan Section -->
-    <section class="kegiatan" id="kegiatan">
+    <section class="kegiatan">
         <div class="container">
             <h2 class="section-title fade-in">Kegiatan Kami</h2>
             
-            <div class="activity-grid">
+            <div class="activity-grid" id="kegiatan">
                 <div class="activity-card fade-in">
                     <div class="activity-image">
                         <div class="activity-date">15 Mar 2024</div>
@@ -187,7 +188,7 @@
             </div>
 
             <!-- Photo Gallery -->
-            <div class="photo-gallery">
+            <div class="photo-gallery" id="doksli">
                 <h3 class="gallery-title fade-in">Galeri Foto Kegiatan</h3>
                 <div class="photo-grid">
                     <div class="photo-item fade-in" onclick="openModal('modal1')">
@@ -257,8 +258,8 @@
                     <ul>
                         <li><a href="#">Tentang Kami</a></li>
                         <li><a href="#">Visi Misi</a></li>
-                        <li><a href="kegiatan.html">Kegiatan</a></li>
-                        <li><a href="#">Fun Fact</a></li>
+                        <li><a href="#kegiatan">Kegiatan</a></li>
+                        <li><a href="fun-fact.html">Fun Fact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -270,7 +271,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="copyright">
+            <div class="copyright" id="d">
                 <p>&copy; 2024 Yapeka. Hak Cipta Dilindungi.</p>
             </div>
         </div>
