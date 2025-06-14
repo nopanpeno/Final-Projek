@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | MUA - Konservasi Alam Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header id="header">
+        <nav class="container">
+            <a href="index.html" class="logo">Menadah Untuk Alam</a>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="#Quote">Quote</a></li>
+                <li class="dropdown">
+                    <a href="a" class="dropdown-toggle">Tentang <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#vision">Visi & Misi</a></li>
+                        <li><a href="kegiatan.html">Kegiatan</a></li>
+                        <li><a href="fun-fact.html">Fun Fact</a></li>
+                    </ul>
+                </li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="#a">Donasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Partnership Section -->
+    <div class="about_us">
+        <div class="story">
+            <h1>Tentang Kami</h1>
+            <br>
+
+            <p>Melihat kebakaran hutan di Kalimantan pada tahun 2015(?), mata hati kami tergerak untuk mengulurkan tangan dan menyelamatkan satwa-satwa malang yang terdampak akibat kehilangan habitatnya</p>
+
+            <br>
+            <p>Kami awalnya hanya dapat menyelamatkan dua satwa; seekor kucing hutan bernama Manis, dan seekor orang utan bernama Rembo.</p>
+
+            <div class="about_us_gallery">
+                <div class="about_us_picturebox_1">
+                    <img class="hewankami" src="rembo.webp" alt="">
+                    <p class="about_us_picturebox_description"><i>Rembo</i></p>
+                </div>
+                <div class="about_us_picturebox_1">
+                    <img class="hewankami" src="manis.png" alt="">
+                    <p class="about_us_picturebox_description"><i>Manis</i></p>
+                </div>
+            </div>
+
+            <br>
+            <p>Saat itu, kami rasa tugas kami sudah selesai. Tepat pada saat kami ingin menarik tangan kami, tibalah segelintir bantuan yang ingin bekerjasama dengan kami untuk menyelamatkan dan mengevakuasi penghuni hutan lainnya. Iktikad baik tersebut pun kami terima.</p>
+
+            <br>
+            <p>Alhasil, kami pun dapat mendirikan pusat konservasi alam kami. Tempat yang dulu hanya dapat menampung Manis dan Rembo kini telah menjadi are seluas 50 hektar persegi yang dihuni oleh teman-teman mereka. Kami berjanji untuk menjaga satwa-satwa yang berada di konservasi kami dari kepunahan, agar keberadaan mereka tidak hanya menjadi kisah bagi anak dan cucu kami.</p>
+            
+            <div class="about_us_gallery" id="Quote">
+                <div class="about_us_picturebox_1">
+                    <img class="hewankami2" src="manuk.webp" alt="">
+                    <p class="about_us_picturebox_description"><i>Selamatkan burung! Jangan potong hutan kamu!</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                <h4>Menadah Untuk Alam</h4>
+                <p>
+              Organisasi nirlaba yang berfokus pada konservasi keanekaragaman
+              hayati dan pemberdayaan masyarakat Indonesia.
+                </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#">Visi Misi</a></li>
+                        <li><a href="kegiatan.html">Kegiatan</a></li>
+                        <li><a href="fun-fact.html">Fun Fact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontak Kami</h4>
+                   <ul>
+                        <li>novandidirobi@students.amikom.ac.id</li>
+                        <li>+62 123 4567 890</li>
+                        <li>Daerah Istimewa Yogyakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 MUA. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Dropdown functionality
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        dropdowns.forEach(dropdown => {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // On mobile, toggle the dropdown
+                if (window.innerWidth <= 768) {
+                    dropdown.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown) {
+                            otherDropdown.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.dropdown')) {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        navLinks.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A' && !e.target.classList.contains('dropdown-toggle')) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+                // Close all dropdowns
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+
+        // Photo modal functionality
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the image
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    this.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal').forEach(modal => {
+                    modal.style.display = 'none';
+                });
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Active navigation link
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
