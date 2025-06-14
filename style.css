@@ -35,12 +35,13 @@ body {
   padding: 0 20px;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling */ /*/About Us Page--------------------------------------------------------------------------------------------------------------------/*/
 html {
   scroll-behavior: smooth;
 }
 
-/* Header Styles */
+/* Header Styles Page--------------------------------------------------------------------------------------------------------------------/*/
+
 header {
   position: fixed;
   top: 0;
@@ -122,7 +123,8 @@ nav {
   font-size: 30px;
 }
 
-/* Dropdown Styles */
+/* Dropdown Styles Page--------------------------------------------------------------------------------------------------------------------/*/
+
 .dropdown {
   position: relative;
 }
@@ -221,7 +223,8 @@ nav {
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
-/* Hero Section */
+/* Hero Section Page--------------------------------------------------------------------------------------------------------------------/*/
+
 .hero {
   height: 100vh;
   background: linear-gradient(
@@ -309,7 +312,8 @@ nav {
   animation: bounce 2s infinite;
 }
 
-/* Fun Facts Grid */
+/* Fun Facts Grid Page--------------------------------------------------------------------------------------------------------------------/*/
+
 .facts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -378,7 +382,8 @@ nav {
   margin: 1rem 0;
 }
 
-/* Interactive Elements */
+/* Interactive Elements Page--------------------------------------------------------------------------------------------------------------------/*/
+
 .interactive-section {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -434,7 +439,8 @@ nav {
   background: rgb(244, 67, 54);
 }
 
-/* Program Section */
+/* Program Section Page--------------------------------------------------------------------------------------------------------------------/*/
+
 .section {
   padding: 5rem 0;
 }
@@ -525,7 +531,8 @@ nav {
   line-height: 1.6;
 }
 
-/* Stats Section */
+/* Stats Section Page--------------------------------------------------------------------------------------------------------------------/*/
+
 .stats {
   background: var(--background);
   padding: 4rem 0;
@@ -558,7 +565,8 @@ nav {
   margin-top: 0.5rem;
 }
 
-/* Kegiatan Section */
+/* Kegiatan Section Page--------------------------------------------------------------------------------------------------------------------/*/
+
 .kegiatan {
   background: var(--background);
   padding: 5rem 0;
@@ -709,7 +717,8 @@ nav {
   transform: translateY(-2px);
 }
 
-/* Photo Gallery */
+/* Photo Gallery--------------------------------------------------------------------------------------------------------------------/*/
+
 .photo-gallery {
   margin-top: 4rem;
 }
@@ -786,7 +795,8 @@ nav {
   font-size: 2rem;
 }
 
-/* Modal for photo view */
+/* Modal for photo --------------------------------------------------------------------------------------------------------------------/*/
+
 .modal {
   display: none;
   position: fixed;
@@ -828,6 +838,8 @@ nav {
 .modal-close:hover {
   color: var(--primary-green);
 }
+
+/*/Partnership Page--------------------------------------------------------------------------------------------------------------------/*/
 
 /* Partnership Page - Responsive Version */
 .partners {
@@ -950,7 +962,72 @@ nav {
   display: flex;
   flex-direction: column;
 }
-/* Footer */
+/*/About Us Page (Ttg Kami)--------------------------------------------------------------------------------------------------------------------/*/
+
+.about_us {
+  padding-top: 30vh;
+  background-color: #059669;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.story {
+  color: white;
+  width: 50%;
+}
+
+.story p {
+  font-size: 20px;
+}
+
+.about_us_gallery {
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.about_us_picturebox_1 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hewankami {
+  width: 268px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about_us_picturebox_description {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hewankami:hover,
+.hewankami2:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+}
+
+.hewankami2 {
+  margin-top: 20px;
+  width: 556px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*/Footer--------------------------------------------------------------------------------------------------------------------/*/
+
 footer {
   background: var(--text-dark);
   color: var(--white);
@@ -1005,7 +1082,8 @@ footer {
   color: #9ca3af;
 }
 
-/* Animations */
+/*/Animation--------------------------------------------------------------------------------------------------------------------/*/
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1044,7 +1122,8 @@ footer {
   transform: translateY(0);
 }
 
-/* Responsive Design */
+/*/Responsive Design --------------------------------------------------------------------------------------------------------------------/*/
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
@@ -1095,7 +1174,8 @@ footer {
     padding: 2rem;
   }
 
-  /* Animations */
+  /*/Animation --------------------------------------------------------------------------------------------------------------------/*/
+
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -1116,7 +1196,35 @@ footer {
     }
   }
 
-  /* Mobile Dropdown Styles */
+  .about_us {
+    padding-top: 20vh;
+  }
+
+  .about_us_gallery {
+    margin-top: 20px;
+    display: block;
+  }
+
+  .hewankami {
+    margin-top: 10px;
+    max-width: 300px;
+    object-fit: cover;
+  }
+
+  .hewankami2 {
+    max-width: 450px;
+  }
+
+  .story p {
+    font-size: 18px;
+  }
+
+  .story {
+    color: white;
+    width: 80%;
+  }
+
+  /* Mobile Dropdown Styles --------------------------------------------------------------------------------------------------------------------/*/
   .dropdown-content {
     position: static;
     opacity: 1;
@@ -1174,5 +1282,25 @@ footer {
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .hewankami {
+    margin-top: 10px;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .hewankami2 {
+    max-width: 250px;
+  }
+
+  .about_us {
+    padding-top: 15vh;
+  }
+
+  .story {
+    color: white;
+    width: 80%;
   }
 }
