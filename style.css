@@ -841,186 +841,192 @@ nav {
 
 /*/Partnership Page--------------------------------------------------------------------------------------------------------------------/*/
 
-    .partners_intro{
-        max-width: fit-content;
-        padding-right: 80px;
-        padding-left: 80px;
-        font-size: 25px;
-    }        
+.partners_intro {
+  max-width: fit-content;
+  padding-right: 80px;
+  padding-left: 80px;
+  font-size: 25px;
+}
 
-    .partners{
-        display: block;
-        min-height: 100vh;
-        height: 100%;
-        background-color: #059669;
-        color: white;
-        padding-bottom: 10px;
-    }
+.partners {
+  display: block;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #059669;
+  color: white;
+  padding-bottom: 10px;
+}
 
-    .partners_1a_parte{
-        padding-top: 30vh;
-        display: block;
-        min-height: 40vh;
-        align-items: end;
-        text-align: center;
-    }
+.partners_1a_parte {
+  padding-top: 30vh;
+  display: block;
+  min-height: 40vh;
+  align-items: end;
+  text-align: center;
+}
 
-    .partners_2a_parte{
-        margin-top: 5vh;
-        display: block;
-        margin-bottom: 5vh;
-    }
+.partners_2a_parte {
+  margin-top: 5vh;
+  display: block;
+  margin-bottom: 5vh;
+}
 
-    .partners_row{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+.partners_row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .partner{
-        background-color: rgba(255, 255, 255, 0.75);
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 120px;
-        height: 90px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+.partner {
+  background-color: rgba(255, 255, 255, 0.75);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 120px;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-    .partner_license:hover,.partner_exclusive:hover,.partner:hover{
-        transition: 0.2s;
-        cursor: pointer;
-        background-color: rgb(253, 253, 253);
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.486);
-    }
-    
-    .partner_license:active,.partner_exclusive:active,.partner:active{
-        transition: 0.2s;
-        cursor: pointer;
-        background-color: rgb(244,244,244);
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.486);
-    }
-    
-    .partners_3a_parte{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-weight: 500;
-    }
+.partner_license:hover,
+.partner_exclusive:hover,
+.partner:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: rgb(253, 253, 253);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.486);
+}
 
-    .partners_4a_parte{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
+.partner_license:active,
+.partner_exclusive:active,
+.partner:active {
+  transition: 0.2s;
+  cursor: pointer;
+  background-color: rgb(244, 244, 244);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.486);
+}
 
-    .partner_exclusive{
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 250px;
-        height: 120px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
-        margin-left: 10px;
-        margin-right: 10px;
-        background-color: rgba(255, 255, 255, 0.75);
-    }
+.partners_3a_parte {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
 
-    .partner_license{
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 200px;
-        height: 90px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
-        margin-left: 10px;
-        margin-right: 10px;
-        background-color: rgba(255, 255, 255, 0.75);
-    }
+.partners_4a_parte {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
-    .row{
-        display: flex;
-    }
+.partner_exclusive {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
 
-    .row0{
-        display: flex;
-    }
+.partner_license {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 90px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
 
-    .intro_exclusive,.intro_partners,.intro_license{
-        font-weight: bold;
-        font-size: 29px;
-    }
+.row {
+  display: flex;
+}
+
+.row0 {
+  display: flex;
+}
+
+.intro_exclusive,
+.intro_partners,
+.intro_license {
+  font-weight: bold;
+  font-size: 29px;
+}
 /*/About Us Page (Ttg Kami)--------------------------------------------------------------------------------------------------------------------/*/
 
-.about_us{
-    padding-top: 30vh;
-    background-color: #059669;
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 60px;
+.about_us {
+  padding-top: 30vh;
+  background-color: #059669;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 60px;
 }
 
-.story{
-    color: white;
-    width: 50%;
+.story {
+  color: white;
+  width: 50%;
 }
 
-.story p{
-    font-size: 20px;
+.story p {
+  font-size: 20px;
 }
 
-.about_us_gallery{
-    margin-top: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+.about_us_gallery {
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
-.about_us_picturebox_1{
-    margin-left: 20px;
-    margin-right: 20px;
+.about_us_picturebox_1 {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.hewankami{
-    width: 268px;
-    height: 300px;
-    border-radius: 20px;
-    object-fit: cover;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+.hewankami {
+  width: 268px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
-.about_us_picturebox_description{
-    color: rgba(255, 255, 255, 0.5);
+.about_us_picturebox_description {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-
-.hewankami:hover,.hewankami2:hover{
-    transition: 0.5s;
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+.hewankami:hover,
+.hewankami2:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
 }
 
-.hewankami2{
-    margin-top: 20px;
-    width: 556px;
-    height: 300px;
-    border-radius: 20px;
-    object-fit: cover;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+.hewankami2 {
+  margin-top: 20px;
+  width: 556px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 /*/Footer--------------------------------------------------------------------------------------------------------------------/*/
@@ -1172,9 +1178,9 @@ footer {
   }
 
   .partners {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   /*/Animation --------------------------------------------------------------------------------------------------------------------/*/
 
@@ -1244,110 +1250,106 @@ footer {
   }
 }
 
-
 @media (max-width: 660px) {
-    .about_us{
-        padding-top: 20vh;
-    }
+  .about_us {
+    padding-top: 20vh;
+  }
 
-    .about_us_gallery{
-        margin-top: 20px;
-        display: block;
-    }
+  .about_us_gallery {
+    margin-top: 20px;
+    display: block;
+  }
 
-    .hewankami{
-        margin-top: 10px;
-        max-width: 300px;
-        object-fit: cover;
-    }
+  .hewankami {
+    margin-top: 10px;
+    max-width: 300px;
+    object-fit: cover;
+  }
 
-    .hewankami2{
-        max-width: 450px;
-    }
+  .hewankami2 {
+    max-width: 450px;
+  }
 
-    .story p{
-        font-size: 18px;
-    }
+  .story p {
+    font-size: 18px;
+  }
 
-    .story{
-        color: white;
-        width: 80%;
-    }
+  .story {
+    color: white;
+    width: 80%;
+  }
 
-    .partners {
-            display: block;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+  .partners {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-        .row{
-            display: block;
-            width: 100%;
-        }
+  .row {
+    display: block;
+    width: 100%;
+  }
 
-        .row0{
-            display: flex;
-            margin-bottom: 10px;
-        }
+  .row0 {
+    display: flex;
+    margin-bottom: 10px;
+  }
 
-        .row1{
-            display: flex;
-            justify-content: center;
-        }
+  .row1 {
+    display: flex;
+    justify-content: center;
+  }
 
+  .partners_row {
+    margin: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
 
-        .partners_row{
-            margin: 0px;
-            margin-bottom: 0px;
-            width: 100%;
+  .partners_2a_parte {
+    display: block;
+  }
 
-        }
+  .partner_exclusive {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 
-        .partners_2a_parte{
-            display: block;
-        }
-        
-        .partner_exclusive{
-            margin-bottom: 10px;
-            width: 100%;
+  .partner {
+    width: 100%;
+  }
 
-        }
+  .partners_4a_parte {
+    display: block;
+  }
 
-        .partner{
-            width: 100%;
-        }
+  .partner_license {
+    margin-bottom: 10px;
+    width: 100%;
+  }
 
-        .partners_4a_parte{
-            display: block;
-        }
+  .partners_1a_parte {
+    padding-top: 20vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-        .partner_license{
-            margin-bottom: 10px;
-            width: 100%;
-        }
+  .partners_intro {
+    font-size: 17px;
+    padding: 0;
+  }
 
-        .partners_1a_parte{
-            padding-top: 20vh;
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+  .intro_exclusive,
+  .intro_partners,
+  .intro_license {
+    font-weight: bold;
+    font-size: 20px;
+  }
 
-        .partners_intro{
-            font-size: 17px;
-            padding: 0;
-        }
-        
-        .intro_exclusive,.intro_partners,.intro_license{
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        
-        .partners_3a_parte {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
+  .partners_3a_parte {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1364,23 +1366,23 @@ footer {
     text-align: center;
   }
 
-    .hewankami{
-        margin-top: 10px;
-        max-width: 250px;
-        height: 200px;
-        object-fit: cover;
-    }
+  .hewankami {
+    margin-top: 10px;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+  }
 
-    .hewankami2{
-        max-width: 250px;
-    }
+  .hewankami2 {
+    max-width: 250px;
+  }
 
-    .about_us{
-        padding-top: 15vh;
-    }
+  .about_us {
+    padding-top: 15vh;
+  }
 
-    .story{
-        color: white;
-        width: 80%;
-    }
+  .story {
+    color: white;
+    width: 80%;
+  }
 }
