@@ -35,7 +35,7 @@ body {
   padding: 0 20px;
 }
 
-/* Smooth scrolling */ /*/About Us Page--------------------------------------------------------------------------------------------------------------------/*/
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
@@ -321,37 +321,6 @@ nav {
   margin-bottom: 3rem;
 }
 
-.fact-card {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  animation: fadeInUp 0.8s ease both;
-}
-
-.fact-card:nth-child(even) {
-  animation-delay: 0.2s;
-}
-
-.fact-card:nth-child(3n) {
-  animation-delay: 0.4s;
-}
-
-.fact-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(45deg, #2c5530, #4a7c59, #667eea);
-  animation: shimmer 2s infinite;
-}
-
 .fact-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -382,62 +351,6 @@ nav {
   margin: 1rem 0;
 }
 
-/* Interactive Elements Page--------------------------------------------------------------------------------------------------------------------/*/
-
-.interactive-section {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  padding: 3rem;
-  margin: 3rem 0;
-  color: black;
-  text-align: center;
-}
-
-.quiz-container {
-  margin-top: 2rem;
-}
-
-.quiz-question {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background: rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
-}
-
-.quiz-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.quiz-option {
-  padding: 1rem;
-  background: rgb(255, 255, 255);
-  border: none;
-  border-radius: 10px;
-  color: black;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
-}
-
-.quiz-option:hover {
-  background: rgb(255, 255, 255);
-  transform: scale(1.05);
-}
-
-.quiz-option.correct {
-  background: rgb(76, 175, 79);
-}
-
-.quiz-option.wrong {
-  background: rgb(244, 67, 54);
-}
 
 /* Program Section Page--------------------------------------------------------------------------------------------------------------------/*/
 
