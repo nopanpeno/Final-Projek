@@ -332,46 +332,6 @@
             observer.observe(el);
         });
 
-        // Counter animation for stats
-        function animateCounters() {
-            const counters = document.querySelectorAll(".stat-number");
-            counters.forEach((counter) => {
-                const target = parseInt(counter.textContent.replace(/\D/g, ""));
-                const increment = target / 100;
-                let current = 0;
-
-                const updateCounter = () => {
-                    if (current < target) {
-                        current += increment;
-                        counter.textContent = Math.ceil(current) + "+";
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target + "+";
-                    }
-                };
-
-                updateCounter();
-            });
-        }
-
-        // Trigger counter animation when stats section is visible
-        const statsSection = document.querySelector(".stats");
-        const statsObserver = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        statsObserver.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.5 }
-        );
-
-        if (statsSection) {
-            statsObserver.observe(statsSection);
-        }
-
         // Active navigation link
         window.addEventListener("scroll", () => {
             const sections = document.querySelectorAll("section[id]");
