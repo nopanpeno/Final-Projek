@@ -1,0 +1,138 @@
+.wrapper {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+    display: block;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -230px;
+    }
+}
+
+@keyframes scrollLeft2 {
+    to {
+        left: -650px;
+    }
+}
+
+@keyframes scrollRight {
+    to {
+        right: -500px;
+    }
+}
+
+.partnernormal {
+    width: 230px;
+    height: 120px;
+    position: absolute;
+    left: max(calc(230px * 7), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    animation-name: scrollLeft;
+}
+
+.partnernormal1 {
+    animation-delay: calc(40s / 7 * (7 - 1) * -1);
+}
+
+.partnernormal2 {
+    animation-delay: calc(40s / 7 * (7 - 2) * -1);
+}
+
+.partnernormal3 {
+    animation-delay: calc(40s / 7 * (7 - 3) * -1);
+}
+
+.partnernormal4 {
+    animation-delay: calc(40s / 7 * (7 - 4) * -1);
+}
+
+.partnernormal5 {
+    animation-delay: calc(40s / 7 * (7 - 5) * -1);
+}
+
+.partnernormal6 {
+    animation-delay: calc(40s / 7 * (7 - 6) * -1);
+}
+
+.partnernormal7 {
+    animation-delay: calc(40s / 7 * (7 - 7) * -1);
+}
+
+.partnerexclusive {
+    width: 33%;
+    height: 120px;
+    position: absolute;
+    right: max(calc(500px * 2),100%);
+    animation-name: scrollRight;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.partnerexclusive1 {
+    animation-delay: calc(40s / 2 * (2 - 1) * -1);
+}
+
+.partnerexclusive2 {
+    animation-delay: calc(40s / 2 * (2 - 2) * -1);
+}
+
+.partnerlicense {
+    width: 50%;
+    height: 120px;
+    position: absolute;
+    left: max(calc(200px * 3), 100%);
+    animation-name: scrollLeft2;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.partnerlicense1 {
+    animation-delay: calc(40s / 3 * (3 - 1) * -1);
+}
+
+.partnerlicense2 {
+    animation-delay: calc(40s / 3 * (3 - 2) * -1);
+}
+
+.partnerlicense3 {
+    animation-delay: calc(40s / 3 * (3 - 3) * -1);
+}
+
+.section2{
+    display: flex;
+    text-align: center;
+}
+
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
