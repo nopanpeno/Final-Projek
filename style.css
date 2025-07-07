@@ -916,30 +916,34 @@ nav {
 }
 
 .hewankami {
+  transition: 0.5s;
   width: 268px;
   height: 300px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+  cursor:pointer;
 }
 
 .about_us_picturebox_description {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .hewankami:hover,
 .hewankami2:hover {
   transition: 0.5s;
-  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
 
 .hewankami2 {
+  transition: 0.5s;
   margin-top: 20px;
   width: 556px;
   height: 300px;
   border-radius: 20px;
   object-fit: cover;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+  cursor:pointer;
 }
 
 /*/Footer--------------------------------------------------------------------------------------------------------------------/*/
