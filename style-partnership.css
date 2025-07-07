@@ -17,27 +17,22 @@
 
 @keyframes scrollLeft {
     to {
-        left: -230px;
+        left: -200px;
     }
 }
 
-@keyframes scrollLeft2 {
-    to {
-        left: -650px;
-    }
-}
 
 @keyframes scrollRight {
     to {
-        right: -500px;
+        right: -200px;
     }
 }
 
 .partnernormal {
-    width: 230px;
+    width: 200px;
     height: 120px;
     position: absolute;
-    left: max(calc(230px * 7), 100%);
+    left: max(calc(200px * 7), 100%);
     animation-name: scrollLeft;
     animation-duration: 40s;
     animation-timing-function: linear;
@@ -77,12 +72,12 @@
 }
 
 .partnerexclusive {
-    width: 33%;
+    width: 200px;
     height: 120px;
     position: absolute;
-    right: max(calc(500px * 2),100%);
+    right: max(calc(200px * 2), 100%);
     animation-name: scrollRight;
-    animation-duration: 40s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     text-align: center;
@@ -91,20 +86,20 @@
 }
 
 .partnerexclusive1 {
-    animation-delay: calc(40s / 2 * (2 - 1) * -1);
+    animation-delay: calc(20s / 2 * (2 - 1) * -1);
 }
 
 .partnerexclusive2 {
-    animation-delay: calc(40s / 2 * (2 - 2) * -1);
+    animation-delay: calc(20s / 2 * (2 - 2) * -1);
 }
 
 .partnerlicense {
-    width: 50%;
+    width: 200px;
     height: 120px;
     position: absolute;
     left: max(calc(200px * 3), 100%);
-    animation-name: scrollLeft2;
-    animation-duration: 40s;
+    animation-name: scrollLeft;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     text-align: center;
@@ -113,26 +108,91 @@
 }
 
 .partnerlicense1 {
-    animation-delay: calc(40s / 3 * (3 - 1) * -1);
+    animation-delay: calc(20s / 3 * (3 - 1) * -1);
 }
 
 .partnerlicense2 {
-    animation-delay: calc(40s / 3 * (3 - 2) * -1);
+    animation-delay: calc(20s / 3 * (3 - 2) * -1);
 }
 
 .partnerlicense3 {
-    animation-delay: calc(40s / 3 * (3 - 3) * -1);
+    animation-delay: calc(20s / 3 * (3 - 3) * -1);
 }
 
-.section2{
+.section2 {
     display: flex;
     text-align: center;
 }
 
-.section3{
+.section3 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 20px;
     padding-left: 20px;
+}
+
+.line {
+    display: flex;
+}
+
+.tag {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    justify-content: center;
+    min-width: 250px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.tagleft {
+    text-align: right;
+}
+
+.tagright {
+    text-align: left;
+}
+
+.partnertag {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1022px) {
+    .line {
+        display: block;
+    }
+
+    .tag {
+        order: -1;
+    }
+
+    .wrapper {
+        order: 2;
+    }
+
+    .partnertag {
+        text-align: center;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
 }
