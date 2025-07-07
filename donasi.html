@@ -321,6 +321,69 @@
   </footer>
 
   <script>
+    function showSection(id) {
+      document
+        .querySelectorAll(".section")
+        .forEach((s) => s.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+
+    function pilihProgram(program, nominal) {
+      document.getElementById("program").value = program;
+      document.getElementById("nominal").value = nominal;
+      showSection("section-formulir");
+    }
+    function resetForm() {
+      document.getElementById("nama").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("nominal").value = "";
+      document.getElementById("program").value = "";
+    }
+    function lanjutPembayaran(e) {
+      e.preventDefault();
+      const nama = document.getElementById("nama").value;
+      const nominal = document.getElementById("nominal").value;
+      const program = document.getElementById("program").value;
+      document.getElementById("out-nama").textContent = nama;
+      document.getElementById("out-program").textContent =
+        program === "karang"
+          ? "Pelestarian Terumbu Karang"
+          : program === "satwa"
+            ? "Pelestarian Satwa Endemik"
+            : "Pelestarian Hutan Bakau";
+      document.getElementById("out-nominal").textContent = nominal;
+      showSection("section-pembayaran");
+    }
+
+    function konfirmasiDonasi() {
+      alert("Donasi Anda sedang diproses. Terima kasih!");
+
+      document.getElementById("nama").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("nominal").value = "";
+      document.getElementById("program").value = "";
+
+      showSection("section-penjelasan");
+      window.scrollTo(0, 0);
+    }
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Dropdown functionality
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+      const toggle = dropdown.querySelector('.dropdown-toggle');
+
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault();
     if (window.innerWidth <= 768) {
           dropdown.classList.toggle('active');
 
@@ -411,69 +474,7 @@
   
 
 
-    function showSection(id) {
-      document
-        .querySelectorAll(".section")
-        .forEach((s) => s.classList.remove("active"));
-      document.getElementById(id).classList.add("active");
-    }
-
-    function pilihProgram(program, nominal) {
-      document.getElementById("program").value = program;
-      document.getElementById("nominal").value = nominal;
-      showSection("section-formulir");
-    }
-    function resetForm() {
-      document.getElementById("nama").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("nominal").value = "";
-      document.getElementById("program").value = "";
-    }
-    function lanjutPembayaran(e) {
-      e.preventDefault();
-      const nama = document.getElementById("nama").value;
-      const nominal = document.getElementById("nominal").value;
-      const program = document.getElementById("program").value;
-      document.getElementById("out-nama").textContent = nama;
-      document.getElementById("out-program").textContent =
-        program === "karang"
-          ? "Pelestarian Terumbu Karang"
-          : program === "satwa"
-            ? "Pelestarian Satwa Endemik"
-            : "Pelestarian Hutan Bakau";
-      document.getElementById("out-nominal").textContent = nominal;
-      showSection("section-pembayaran");
-    }
-
-    function konfirmasiDonasi() {
-      alert("Donasi Anda sedang diproses. Terima kasih!");
-
-      document.getElementById("nama").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("nominal").value = "";
-      document.getElementById("program").value = "";
-
-      showSection("section-penjelasan");
-      window.scrollTo(0, 0);
-    }
-
-    // Mobile menu toggle
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
-    });
-
-    // Dropdown functionality
-    const dropdowns = document.querySelectorAll('.dropdown');
-
-    dropdowns.forEach(dropdown => {
-      const toggle = dropdown.querySelector('.dropdown-toggle');
-
-      toggle.addEventListener('click', function (e) {
-        e.preventDefault();
+ 
 </script>
 </html>
       
