@@ -255,85 +255,72 @@
     </button>
   </div>
 
-  <!-- Footer -->
-  <footer style="background: #1b2a41; color: white; padding: 40px 0 0 0;">
-  <div class="container">
-    <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-      <div class="footer-col" style="flex: 1; min-width: 220px; margin: 20px;">
-        <h4><i class="bi bi-tree"></i> Menadah Untuk Alam</h4>
-        <p>Organisasi nirlaba yang berfokus pada konservasi keanekaragaman hayati dan pemberdayaan masyarakat Indonesia.</p>
+ <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>
+            <i class="bi bi-tree"></i>
+            Menadah Untuk Alam
+          </h4>
+          <p>
+            Organisasi nirlaba yang berfokus pada konservasi keanekaragaman
+            hayati dan pemberdayaan masyarakat Indonesia.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>
+            <i class="bi bi-link-45deg"></i>
+            Tautan Cepat
+          </h4>
+          <ul>
+            <li>
+              <i class="bi bi-chevron-right"></i>
+              <a href="about.html">Tentang Kami</a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right"></i>
+              <a href="visismisi.html">Visi Misi</a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right"></i>
+              <a href="kegiatan.html">Kegiatan</a>
+            </li>
+            <li>
+              <i class="bi bi-chevron-right"></i>
+              <a href="fun-fact.html">Fun Fact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>
+            <i class="bi bi-telephone"></i>
+            Kontak Kami
+          </h4>
+          <ul>
+            <li>
+              <i class="bi bi-envelope"></i>
+              novandidirobi@students.amikom.ac.id
+            </li>
+            <li>
+              <i class="bi bi-phone"></i>
+              +62 123 4567 890
+            </li>
+            <li>
+              <i class="bi bi-geo-alt"></i>
+              Daerah Istimewa Yogyakarta, Indonesia
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col" style="flex: 1; min-width: 200px; margin: 20px;">
-        <h4><i class="bi bi-link-45deg"></i> Tautan Cepat</h4>
-        <ul style="list-style: none; padding: 0;">
-          <li><i class="bi bi-chevron-right"></i> <a href="about.html" style="color: white;">Tentang Kami</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="visismisi.html" style="color: white;">Visi Misi</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="kegiatan.html" style="color: white;">Kegiatan</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="fun-fact.html" style="color: white;">Fun Fact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col" style="flex: 1; min-width: 220px; margin: 20px;">
-        <h4><i class="bi bi-telephone"></i> Kontak Kami</h4>
-        <ul style="list-style: none; padding: 0;">
-          <li><i class="bi bi-envelope"></i> novandidirobi@students.amikom.ac.id</li>
-          <li><i class="bi bi-phone"></i> +62 123 4567 890</li>
-          <li><i class="bi bi-geo-alt"></i> Daerah Istimewa Yogyakarta, Indonesia</li>
-        </ul>
+      <div class="copyright">
+        <p>&copy; 2024 MUA. Hak Cipta Dilindungi.</p>
       </div>
     </div>
-    <div class="copyright" style="text-align: center; margin-top: 20px; padding: 20px 0; border-top: 1px solid #ffffff33;">
-      <p>&copy; 2024 MUA. Hak Cipta Dilindungi.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script>
-    function showSection(id) {
-      document
-        .querySelectorAll(".section")
-        .forEach((s) => s.classList.remove("active"));
-      document.getElementById(id).classList.add("active");
-    }
-
-    function pilihProgram(program, nominal) {
-      document.getElementById("program").value = program;
-      document.getElementById("nominal").value = nominal;
-      showSection("section-formulir");
-    }
-    function resetForm() {
-      document.getElementById("nama").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("nominal").value = "";
-      document.getElementById("program").value = "";
-    }
-    function lanjutPembayaran(e) {
-      e.preventDefault();
-      const nama = document.getElementById("nama").value;
-      const nominal = document.getElementById("nominal").value;
-      const program = document.getElementById("program").value;
-      document.getElementById("out-nama").textContent = nama;
-      document.getElementById("out-program").textContent =
-        program === "karang"
-          ? "Pelestarian Terumbu Karang"
-          : program === "satwa"
-            ? "Pelestarian Satwa Endemik"
-            : "Pelestarian Hutan Bakau";
-      document.getElementById("out-nominal").textContent = nominal;
-      showSection("section-pembayaran");
-    }
-
-    function konfirmasiDonasi() {
-      alert("Donasi Anda sedang diproses. Terima kasih!");
-
-      document.getElementById("nama").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("nominal").value = "";
-      document.getElementById("program").value = "";
-
-      showSection("section-penjelasan");
-      window.scrollTo(0, 0);
-    }
-
     // Mobile menu toggle
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
@@ -442,5 +429,6 @@
     });
   </script>
 </body>
+
 
 </html>
